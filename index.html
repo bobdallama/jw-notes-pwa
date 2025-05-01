@@ -1,1 +1,36 @@
-<!DOCTYPE html><html><head><title>JW Notes</title></head><body><h1>JW Notes PWA</h1></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#005BBB">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>JW Notes</title>
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <h2>JW Notes</h2>
+            <ul>
+                <li>Midweek</li>
+                <li>Weekend</li>
+                <li>Assemblies</li>
+                <li>Conventions</li>
+                <li>Other</li>
+            </ul>
+        </aside>
+        <main class="note-area">
+            <div class="toolbar">
+                <button onclick="format('bold')">Bold</button>
+                <button onclick="format('italic')">Italic</button>
+                <button onclick="format('underline')">Underline</button>
+            </div>
+            <div id="editor" contenteditable="true" class="editor">
+                Start taking notes...
+            </div>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
